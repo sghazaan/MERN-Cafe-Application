@@ -19,6 +19,16 @@ test('Testing Add deal button', () => {
   expect(screen.getByRole("button", { name: "Create person" })).toBeEnabled();
 });
 
+test('Testing Add deal button', () => {
+  render(<Create />);
+  expect(screen.getByRole("radio", { name: "Student" })).toBeEnabled();
+});
+
+test('Testing Add deal button', () => {
+  render(<Create />);
+  expect(screen.getByRole("radio", { name: "Faculty" })).toBeEnabled();
+});
+
 
 
 test("Navbar test", () => {
