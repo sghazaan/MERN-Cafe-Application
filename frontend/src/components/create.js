@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
-
+import {BrowserRouter} from "react-router-dom";
 export default function Create() {
     const [form, setForm] = useState( {
         name: "",
@@ -8,7 +8,7 @@ export default function Create() {
         level: "",
     });
 
-    const navigate = useNavigate();
+<BrowserRouter>const navigate = useNavigate();</BrowserRouter>    
 
     //updating state properties
     function updateForm(value) {
@@ -37,12 +37,12 @@ export default function Create() {
         });
 
         setForm( {name: "", number: "", level: ""});
-        navigate("/");
+      <BrowserRouter> navigate("/");</BrowserRouter> 
     }
 
     //displaying form that takes input from user
     return(
-        <div>
+        <div data-testid="mainDiv">
             <h3> Add New Customer</h3>
             <form onSubmit = {onSubmit}>
                 <div className = "form-group">
@@ -92,7 +92,7 @@ export default function Create() {
            <label htmlFor="levelSenior" className="form-check-label">Faculty</label>
          </div>
        </div>
-                 <div className="form-group">
+                 <div data-testid = "btn" className="form-group">
          <input
            type="submit"
            value="Create person"

@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 // Here, we display our Navbar
 export default function Navbar() {
  return (
-   <div>
+   <div data-testid="nav">
      <nav className="navbar navbar-expand-lg navbar-light bg-light">
        <NavLink className="navbar-brand" to="/">
        <img style={{"width" : 20 + '%'}} src="https://bwog.com/wp-content/uploads/2014/03/uni.jpg"></img>
