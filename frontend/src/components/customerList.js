@@ -25,7 +25,7 @@ export default function CustomerList() {
  // This method fetches the records from the database.
  useEffect(() => {
    async function getCustomer() {
-     const response = await fetch(`http://localhost:3001/CustomerRoutes/`);
+     const response = await fetch(`http://18.183.115.12:3001/CustomerRoutes/`);
  
      if (!response.ok) {
        const message = `An error occurred: ${response.statusText}`;
@@ -44,7 +44,7 @@ export default function CustomerList() {
  
  // This method will delete a record
  async function deleteCustomer(id) {
-   await fetch(`http://localhost:3001/${id}`, {
+   await fetch(`http://18.183.115.12:3001/${id}`, {
      method: "DELETE"
    });
  

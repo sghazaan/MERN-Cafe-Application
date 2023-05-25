@@ -28,9 +28,6 @@ test('Testing Add deal button', () => {
   render(<Create />);
   expect(screen.getByRole("radio", { name: "Faculty" })).toBeEnabled();
 });
-
-
-
 test("Navbar test", () => {
   render(
     <MemoryRouter>

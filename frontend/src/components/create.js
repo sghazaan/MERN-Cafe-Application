@@ -24,7 +24,7 @@ export default function Create() {
         //when post req is sent to url, we'll add new rec to db
         const newPerson = { ...form };
 
-        await fetch("http://localhost:3001/CustomerRoutes/add", {
+        await fetch("http://18.183.115.12:3001/CustomerRoutes/add", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
