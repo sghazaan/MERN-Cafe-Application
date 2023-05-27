@@ -1,1 +1,1 @@
-A trial Waiter Management module for Software Construction and Development Group Project.
+Cafe Application implemented using MERN Stack. It mainly has CRUD operations for all five panels
